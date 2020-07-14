@@ -1,0 +1,45 @@
+* {
+	font-weight: 300;
+	font-family: "Roboto Slab", serif;
+	font-size: 1rem;
+}
+
+h1 {
+	font-size: 2rem !important;
+	color: #0079ad;
+	font-weight: 500;
+	margin: 0 0 30px 0;
+}
+
+.site-name {
+	font-size: 3rem;
+	font-weight: 400;
+}
+
+.news-article {
+	margin: 0 0 30px 0;
+}
+.news-article .card-title {
+	margin-bottom: 0.75rem;
+	font-size: 1.6rem;
+	font-weight: 300;
+}
+.news-article a {
+	color: #0079ad;
+	text-decoration: none;
+	background-color: transparent;
+	font-weight: 400;
+}
+.news-article .card {
+	border: 1px solid rgba(0, 0, 0, 0.125);
+}
+.news-article .card:hover {
+	border: 2px solid #0079ad;
+	margin: -1px -1px;
+}
+.jumbotron {
+	background-color: #0079ad;
+	color: white;
+	padding: 2rem 2rem;
+	border-radius: 0;
+}

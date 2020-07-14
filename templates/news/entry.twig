@@ -1,0 +1,12 @@
+{% extends "layout" %}
+
+{% block content %}
+
+	<h1>{{entry.title}}</h1>
+
+	<p>{{entry.bodyText}}</p>
+
+	<div>Date Created:</div>
+	{{ entry.dateCreated | date('mm/d/Y')  }}
+
+{% endblock %}
