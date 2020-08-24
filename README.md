@@ -2,7 +2,7 @@
 
 ## About
 
-This project is a proof of concept for Craft CMS 3, it's main purpose is to help train new staff on Craft CMS
+This project is a proof of concept for Craft CMS 3, it will mainly be used as educational tool main to help train new staff on Craft CMS
 
 ![](./docs/demo.png)
 
