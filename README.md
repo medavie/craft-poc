@@ -4,7 +4,9 @@
 
 This project is a proof of concept for Craft CMS 3, it will mainly be used as educational tool main to help train new staff on Craft CMS
 
-![](./docs/demo.png)
+<p align="center">
+  <img src="./docs/demo.png"/>
+</p>
 
 ## Prerequisites
 
@@ -38,17 +40,24 @@ git clone https://github.com/medavie/craft-poc
 
 1. Open <strong>MAMP</strong> and click on the <strong>MAMP > Preferences</strong> menu
 
-![](./docs/mamp1.png)
+<p align="center">
+  <img src="./docs/mamp1.png"/>
+</p>
+
 
 2. On the <strong>Web Server</strong> tab, click the <strong>Select</strong> button.
 
-![](./docs/mamp2.png)
+<p align="center">
+  <img src="./docs/mamp2.png"/>
+</p>
 
 3. Select the <code>C:/development/projects/craft-poc/web</code> folder and click the <strong>OK</strong> button.
 
 4. On the <strong>PHP</strong> tab, take note of the <strong>Standard version</strong>. You will need it in the next step.
 
-![](./docs/mamp3.png)
+<p align="center">
+  <img src="./docs/mamp3.png"/>
+</p>
 
 5. In <strong>Windows File Exporer</strong>, open <code>%MAMP_INSTALLATION_DIRECTORY%/conf/%PHP_VERSION%/php.ini</code>
 
@@ -56,17 +65,23 @@ git clone https://github.com/medavie/craft-poc
 
 7. Below the <code>extension=php_pdo_mysql.dll</code> line, add <code>extension=php_fileinfo.dll</code>
 
-![](./docs/phpini.png)
+<p align="center">
+  <img src="./docs/phpini.png"/>
+</p>
 
 8. On <strong>MAMP</strong>, click the <strong>Start Servers</strong> button.
 
-![](./docs/mamp4.png)
+<p align="center">
+  <img src="./docs/mamp4.png"/>
+</p>
 
 ### Setting up the database
 
 1. Open <strong>MySQLWorkbench</strong> and create a new connection by clicking the plus sign
 
-![](./docs/workbench1.png)
+<p align="center">
+  <img src="./docs/workbench1.png"/>
+</p>
 
 2. On the <strong>Setup New Dialog</strong>, enter the following:
 
@@ -75,25 +90,35 @@ git clone https://github.com/medavie/craft-poc
 * <strong>Port:</strong> 3306
 * <strong>Username</strong>: root
 
-![](./docs/workbench2.png)
+<p align="center">
+  <img src="./docs/workbench2.png"/>
+</p>
 
 3. On the <strong>Setup New Dialog</strong>, click the <strong>Store in vault...</strong> button and enter the following:
 
 * <strong>Password:</strong> root
 
-![](./docs/workbench3.png)
+<p align="center">
+  <img src="./docs/workbench3.png"/>
+</p>
 
 4. Click on the <strong>Test connection</strong> button. If the connection succeeds, click the <strong>Ok</strong> button.
 
-![](./docs/workbench3b.png)
+<p align="center">
+  <img src="./docs/workbench3b.png"/>
+</p>
 
 5. Click on the newly created connection.
 
-![](./docs/workbench3d.png)
+<p align="center">
+  <img src="./docs/workbench3d.png"/>
+</p>
 
 6. Click on the <strong>Server > Data Import</strong> menu.
 
-![](./docs/workbench3c.png)
+<p align="center">
+  <img src="./docs/workbench3c.png"/>
+</p>
 
 7. On the <strong>Data Import</strong> dialog, do the following:
 
@@ -101,18 +126,23 @@ git clone https://github.com/medavie/craft-poc
 * Select the <code>c:/development/projects/craft-poc/data/data.sql</code> file
 * Click on the <strong>New</strong> button.
 
-![](./docs/workbench4.png)
+<p align="center">
+  <img src="./docs/workbench4.png"/>
+</p>
 
 8. On the <strong>Create Schema</strong> dialog, enter the following and click the <strong>OK</strong> button:
 
 * <strong>Name of schema to create:</strong> craft-poc
 
-![](./docs/workbench6.png)
+<p align="center">
+  <img src="./docs/workbench6.png"/>
+</p>
 
 9. On the <strong>Data Import</strong> dialog, click the <strong>Start Import</strong> button. 
 
-![](./docs/workbench7.png)
-
+<p align="center">
+  <img src="./docs/workbench7.png"/>
+</p>
 
 ## Accesing the website
 
@@ -131,9 +161,12 @@ git clone https://github.com/medavie/craft-poc
 * <strong>Username:</strong> craft-user
 * <strong>Password:<strong> testtest
 
-![](./docs/craft-login.png)
+<p align="center">
+  <img src="./docs/craft-login.png"/>
+</p>
 
 3. You should now see the following appearing:
 
-![](./docs/craft-admin.png)
-
+<p align="center">
+  <img src="./docs/craft-admin.png"/>
+</p>
