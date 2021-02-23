@@ -1,0 +1,33 @@
+field: f3517deb-a6cd-415e-b0c5-78bbea57b509
+fieldLayouts:
+  b1f49157-3563-4890-b14a-b034f1f8869a:
+    tabs:
+      -
+        fields:
+          bbb83ed7-ed1c-49ff-80bf-e9d451f60ebc:
+            required: false
+            sortOrder: 1
+        name: Content
+        sortOrder: 1
+fields:
+  bbb83ed7-ed1c-49ff-80bf-e9d451f60ebc:
+    contentColumnType: text
+    fieldGroup: null
+    handle: buttonLabel
+    instructions: ''
+    name: buttonLabel
+    searchable: true
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+handle: button
+name: button
+sortOrder: 1

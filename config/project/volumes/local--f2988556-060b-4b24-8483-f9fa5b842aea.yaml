@@ -1,0 +1,8 @@
+handle: local
+hasUrls: true
+name: local
+settings:
+  path: 'C:/projects/craft-poc/web/assets/images'
+sortOrder: 1
+type: craft\volumes\Local
+url: $ASSETS_URL

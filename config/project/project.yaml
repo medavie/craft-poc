@@ -1,0 +1,21 @@
+dateModified: 1614095768
+email:
+  fromEmail: justin.poirier@medavie.bluecross.ca
+  fromName: craft-poc
+  transportType: craft\mail\transportadapters\Sendmail
+graphql:
+  publicToken:
+    enabled: false
+    expiryDate: null
+system:
+  edition: solo
+  live: true
+  name: 'Medavie News'
+  schemaVersion: 3.6.4
+  timeZone: America/Los_Angeles
+users:
+  allowPublicRegistration: false
+  defaultGroup: null
+  photoSubpath: ''
+  photoVolumeUid: null
+  requireEmailVerification: true

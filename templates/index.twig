@@ -6,24 +6,26 @@
 
 		{% set newsArticles = craft.entries().section('news').orderBy('dateCreated asc')%}
 		<div class="row">
-			{% for newArticle in newsArticles %}
-				
-				<article class="col-sm-4 col-xs-12 news-article">
-					<div class="card">
-						<div class="card-body">
-							<p class="card-title">{{newArticle.header}}</p>
-							{% if newArticle.image %}
-								{% set image = newArticle.image.one() %}
-								<img style="max-width: 100%;" src="{{image.url}}"/>
-							{% endif %}
-							<p class="card-text">
-								{{ newArticle.summaryText}}
-							</p>
-							<a href="{{ newArticle.url }}">Continue reading</a>
+			{% if newsArticles %}
+				{% for newArticle in newsArticles.all() %}
+					
+					<article class="col-sm-4 col-xs-12 news-article">
+						<div class="card">
+							<div class="card-body">
+								<p class="card-title">{{newArticle.header}}</p>
+								{% if newArticle.image %}
+									{% set image = newArticle.image.one() %}
+									<img style="max-width: 100%;" src="{{image.url}}"/>
+								{% endif %}
+								<p class="card-text">
+									{{ newArticle.summaryText}}
+								</p>
+								<a href="{{ newArticle.url }}">Continue reading</a>
+							</div>
 						</div>
-					</div>
-				</article>
-			{% endfor %}
+					</article>
+				{% endfor %}
+			{% endif %}
 		</div>
 {% endblock %}
 

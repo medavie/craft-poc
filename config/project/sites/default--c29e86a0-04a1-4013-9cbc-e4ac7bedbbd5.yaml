@@ -1,0 +1,8 @@
+baseUrl: $DEFAULT_SITE_URL
+handle: default
+hasUrls: true
+language: en-US
+name: 'Medavie News'
+primary: true
+siteGroup: c4552b4c-014f-41af-99c7-31d130ae2ced
+sortOrder: 1

@@ -1,0 +1,33 @@
+field: f3517deb-a6cd-415e-b0c5-78bbea57b509
+fieldLayouts:
+  fd4d5cff-c2c1-4171-b000-f4deddbedb4b:
+    tabs:
+      -
+        fields:
+          51502800-f819-4b9e-845c-cefefaf46b1c:
+            required: false
+            sortOrder: 1
+        name: Content
+        sortOrder: 1
+fields:
+  51502800-f819-4b9e-845c-cefefaf46b1c:
+    contentColumnType: text
+    fieldGroup: null
+    handle: text
+    instructions: ''
+    name: text
+    searchable: true
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+handle: text
+name: text
+sortOrder: 2

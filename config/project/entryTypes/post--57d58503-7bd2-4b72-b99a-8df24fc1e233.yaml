@@ -1,0 +1,29 @@
+fieldLayouts:
+  a908346a-19f7-4fda-ba82-cf2f7d8f3849:
+    tabs:
+      -
+        elements:
+          -
+            instructions: null
+            label: Title
+            type: craft\fieldlayoutelements\EntryTitleField
+          -
+            fieldUid: 1da830a1-8e01-45b7-9b00-c0d1927ba86d
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+          -
+            fieldUid: 64c7d4ac-9d83-4215-a045-ba4b4f27be0b
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+          -
+            fieldUid: b5121e65-cd40-4536-8706-750bb58edfbe
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+        name: 'Tab 1'
+        sortOrder: 1
+handle: post
+hasTitleField: true
+name: Post
+section: 05eb6ae5-4f48-4f98-a3b7-dd0b74f1c87a
+sortOrder: 1
+titleFormat: post

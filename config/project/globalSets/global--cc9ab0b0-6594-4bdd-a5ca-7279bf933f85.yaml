@@ -1,0 +1,12 @@
+fieldLayouts:
+  184c4970-7cd9-409d-8a6e-39514d8fcb96:
+    tabs:
+      -
+        fields:
+          4e1df08e-d01f-4e51-bdb6-3c280f0e4987:
+            required: false
+            sortOrder: 1
+        name: 'Tab 1'
+        sortOrder: 1
+handle: global
+name: global
