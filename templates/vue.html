@@ -2,13 +2,32 @@
 
 {% block content %}
 
-<h1>Vue</h1>
+{% set result = gql('{
+	entries (section: "news", orderBy: "dateCreated asc") {
+		title
+		url
+		header
+		summaryText
+		... on news_imagePost_Entry {
+			image {
+				url
+			}
+		}
+	}
+}') %}
 
-<div id="provider-app">
-  <ProviderApp />
+{% set localeParts = craft.app.language | split('-') %}
+{% set locale = localeParts[0] %}
+	  
+<h1>Recent News in Vue</h1>
+
+<div id="app">
+	
+	<news-article-list :news-articles="{{ result.data.entries | json_encode }}" />
+
 </div>
 
-<script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
-<script src="/assets/js/main.js"></script>
+<script src="/assets/js/runtime.bundle.js"></script>
+<script src="/assets/js/main.bundle.js"></script>
 
 {% endblock %}

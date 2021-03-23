@@ -1,0 +1,33 @@
+{% extends "layout"%}
+
+{% block content %}
+
+		<h1>Recent News</h1>
+
+		{% set newsArticles = craft.entries().section('news').orderBy('dateCreated asc')%}
+		<ul class="row news-article-list">
+			{% if newsArticles %}
+				{% for newArticle in newsArticles.all() %}
+					<li class="col-sm-4 col-xs-12 news-article-list-item">
+						<article class="news-article">
+							<div class="card">
+								<div class="card-body">
+									<p class="card-title">{{newArticle.header}}</p>
+									{% if newArticle.image %}
+										{% set image = newArticle.image.one() %}
+										<img src="{{image.url}}"/>
+									{% endif %}
+									<p class="card-text">
+										{{ newArticle.summaryText}}
+									</p>
+									<a href="{{ newArticle.url }}">Continue reading</a>
+								</div>
+							</div>
+						</article>
+					</li>
+				{% endfor %}
+			{% endif %}
+		</div>
+{% endblock %}
+
+

@@ -1,9 +1,8 @@
-const HtmlWebpackPlugin = require('html-webpack-plugin');
 const VueLoaderPlugin = require('vue-loader/lib/plugin');
 const path = require('path');
 
 module.exports = {
-	entry: './src/main.js',
+	entry: './src/app.js',
 	module: {
 		rules: [
 			{ test: /\.js$/, use: 'babel-loader' },
@@ -12,15 +11,20 @@ module.exports = {
 		]
 	},
 	output: {
-		filename: 'main.js',
-		path: path.resolve(__dirname, 'web/assets/js')
+		filename: '[name].bundle.js',
+		path: path.resolve(__dirname, 'web/assets/js'),
+		clean: true
 	},
-	plugins: [
-		/*
-		new HtmlWebpackPlugin({
-			template: './src/index.html'
-		}),
-		*/
-		new VueLoaderPlugin()
-	]
+	optimization: {
+		runtimeChunk: 'single'
+	},
+	/**
+	 * This to allow templating to work
+	 */
+	resolve: {
+		alias: {
+			vue$: 'vue/dist/vue.esm.js'
+		}
+	},
+	plugins: [new VueLoaderPlugin()]
 };

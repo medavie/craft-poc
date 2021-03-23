@@ -1,6 +1,6 @@
 * {
 	font-weight: 300;
-	font-family: "Roboto Slab", serif;
+	font-family: 'Roboto Slab', serif;
 	font-size: 1rem;
 }
 
@@ -30,6 +30,10 @@ h1 {
 	background-color: transparent;
 	font-weight: 400;
 }
+.news-article img {
+	max-width: 100%;
+}
+
 .news-article .card {
 	border: 1px solid rgba(0, 0, 0, 0.125);
 }
@@ -42,4 +46,13 @@ h1 {
 	color: white;
 	padding: 2rem 2rem;
 	border-radius: 0;
+}
+
+ul.news-article-list {
+	margin: -15px;
+	padding: 0;
+}
+
+li.news-article-list-item {
+	list-style-type: none;
 }
