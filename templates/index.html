@@ -2,7 +2,7 @@
 
 {% block content %}
 
-		<h1>Recent News</h1>
+		<h1>{{"recent_news" | t}}</h1>
 
 		{% set newsArticles = craft.entries().section('news').orderBy('dateCreated asc')%}
 		<ul class="row news-article-list">
@@ -20,7 +20,7 @@
 									<p class="card-text">
 										{{ newArticle.summaryText}}
 									</p>
-									<a href="{{ newArticle.url }}">Continue reading</a>
+									<a href="{{ newArticle.url }}">{{"continue_reading" | t}}</a>
 								</div>
 							</div>
 						</article>

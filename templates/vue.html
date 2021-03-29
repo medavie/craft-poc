@@ -19,15 +19,13 @@
 {% set localeParts = craft.app.language | split('-') %}
 {% set locale = localeParts[0] %}
 	  
-<h1>Recent News in Vue</h1>
-
 <div id="app">
 	
-	<news-article-list :news-articles="{{ result.data.entries | json_encode }}" />
+	<news-article-app :news-articles="{{ result.data.entries | json_encode }}" />
 
 </div>
 
 <script src="/assets/js/runtime.bundle.js"></script>
-<script src="/assets/js/main.bundle.js"></script>
+<script src="/assets/js/app.bundle.js"></script>
 
 {% endblock %}

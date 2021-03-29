@@ -1,5 +1,11 @@
 <header>
 	<div class="jumbotron">
-			<p class="site-name">{{siteName}}</p>
+		<p class="site-name">{{siteName}}</p>
+		{% if craft.app.language == "fr" %}
+			<a class="language-toggle" href="{{ getenv('SITE_URL_EN') }}">English</a>
+		{% else %}
+			<a class="language-toggle" href="{{ getenv('SITE_URL_FR') }}">French</a>
+		{% endif %}
+
 	</div>
 </header>

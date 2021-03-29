@@ -16,6 +16,10 @@ h1 {
 	font-weight: 400;
 }
 
+a.language-toggle {
+	color: white;
+}
+
 .news-article {
 	margin: 0 0 30px 0;
 }

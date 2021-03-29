@@ -6,7 +6,7 @@
 	</ul>
 </template>
 <script>
-import NewsArticle from './NewsArticle.vue';
+import NewsArticle from '@/components/NewsArticle.vue';
 
 export default {
 	props: ['newsArticles'],
